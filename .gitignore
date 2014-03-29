@@ -1,0 +1,54 @@
+#.gitignore file
+
+*.opensdf
+*.sdf
+*.user
+*.suo
+*.pyc
+*_i.c
+*_i.h
+*_p.c
+*.aps
+dlldata.c
+
+.gitignore~
+.gitignore.swp
+.DS_Store
+.metadata/
+
+Debug/
+Release/
+ipch/
+Win7Debug/
+
+FbChat/srv/Bin/
+Rasta/SimpleREST/bin/
+Amnon/Server/symbols/
+CalmYourMouse/UserLogger/mouselog.txt
+CalmYourMouse/UserLogger/mouselog.csv
+
+# A symbolic link to $gae/lib/django-1.4/django/contrib/admin/static/admin
+dj/pavarotti/static/admin/
+
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+#idea
+HelloAppEngine/.idea/.name
+HelloAppEngine/.idea/workspace.xml
+
+
+
+
