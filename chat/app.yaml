@@ -1,0 +1,24 @@
+application: u-chat
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+- url: /pure
+  script: wsgiapp.application
+- url: .*
+  script: main.application
+
+
+builtins:
+- remote_api: on
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

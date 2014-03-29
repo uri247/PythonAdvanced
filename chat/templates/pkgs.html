@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available modules</title>
+</head>
+
+
+<body>
+    <table border="1">
+        <thead>
+            <td>Name</td>
+            <td>Path</td>
+            <td>Package</td>
+            <td>Doc</td>
+        </thead>
+        <tbody>
+            {% for pkg in pkgs %}
+                <tr>
+                    <td>{{ pkg.name }}</td>
+                    <td>{{ pkg.path }}</td>
+                    <td>{{ pkg.package }}</td>
+                    <td>{{ pkg.doc | safe }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
