@@ -10,6 +10,7 @@ class Message(ndb.Model):
     content = ndb.StringProperty(indexed=False)
     date = ndb.DateTimeProperty(auto_now_add=True)
 
+
 class ChatHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
